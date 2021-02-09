@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
@@ -15,7 +15,7 @@
 
     <body>
         <header id="mainpic">   
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(227, 247, 207); opacity: 0.9;position:fixed; width: 100%; top: 0; z-index:10;" >
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(227, 247, 207); opacity: 0.9;position:fixed; width: 100%; top: 0; z-index:30;" >
                 <a class="navbar-brand" href="#mainpic">
                     <img src="./pics/this is me.jpg" class="my-0.1" width="30px" height="30px">
                 </a>
@@ -41,17 +41,17 @@
             </nav>
         </header> 
         <div class="top-wrapper">
-            <div id="viewer">
-                <!--画像を用意-->
-                <img class="img-fluid" style="position: absolute; width:100%; z-index: -2;" src="./pics/ooo.png" />
-                <img class="img-fluid" style="position: absolute; width:100%; z-index: -2;" src="./pics/oooo.png" />
-                <img class="img-fluid" style="position: absolute; width:100%; z-index: -2;" src="./pics/ooooo.png" />
+            <div id="viewer" class="slide">
+                <img class="img-fluid" src="./pics/ooo.png" style="opacity: 1; z-index: 20; width: 100%; ">
+                <img class="img-fluid" src="./pics/oooo.png" style="opacity: 0; width: 100%; ">
+                <img class="img-fluid" src="./pics/ooooo.png" style="opacity: 0; width: 100%; ">
             </div>
+            
         </div>
-        
-        <h2 style="text-align: center; padding: 120px 0; letter-spacing: 6px;">About Me</h2>
 
         <div style="background-color: rgb(227, 247, 207);">
+            <h2 style="text-align: center; padding: 120px 0; letter-spacing: 6px; background-color:white;">About Me</h2>
+
             <div class="container" id="aboutMe" style="width:100%; background-color: rgb(227, 247, 207);">
                 <h2 style="text-align: center; padding: 120px 0 90px 0; letter-spacing: 6px;">Hi, I'm Kazuma</h2>
 

@@ -2,3 +2,21 @@ body {
     font-family: 'Sawarabi Mincho', sans-serif;
 }
 
+#viewer {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+  
+#viewer img {
+    top: 0;
+    left: 0;
+    position: absolute;
+} 
+
+.slide:before{
+    content:"";
+    display:block;
+    padding-top:60%; /* 画像の高さを横幅に対する比率で設定 */
+}
